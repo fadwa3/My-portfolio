@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- the header -->
+    <header>
+      <span class="navigatorname">FadwaBen.Web</span>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- the content section -->
+    <section class="content" id="home">
+      <article class="content__presentation">
+        <div class="content__information">
+          <h1>Full Stack Web Developer 👋🏼</h1>
+          <p>Hi, I'm Fadwa Benlhaddad. A passionate Web developer</p>
+          <div class="content_buttons">
+            <button class="contact" type="button">
+              <a href="#contact">Contact Me</a>
+            </button>
+            <button class="resume" type="button">
+              <a href="resume.pdf">My Resume</a>
+            </button>
+          </div>
+        </div>
+        <img class="content__photo" src="images/home.png" />
+      </article>
+    </section>
+    <!-- the about me section -->
+    <section class="about" id="about">
+      <div class="about__container">
+        <img class="about__image" src="images/about1.png" />
+        <article class="about__information">
+          <div class="titleSection">
+            <span class="titleSection__title">about me</span>
+            <h2 class="titleSection__subtitle">
+              A dedicated Full Stack Web Developer living in Morocco
+            </h2>
+          </div>
+          <p class="about__description">
+            Hello! I'm Fadwa Benlhaddad, a dedicated Full Stack web developer
+            from Morocco. Specializing in the MERN stack, I create responsive
+            web pages and innovative solutions. With a license degree in
+            Computer Science, I bring a strong foundation in programming and
+            problem-solving to every project. I'm passionate about continuous
+            learning and collaboration, and I look forward to contributing to
+            impactful web development projects.
+          </p>
+          <article class="content__tech">
+            <h3>Tech Stack</h3>
+            <div class="content__logos">
+              <ul>
+                <li>
+                  <span class="circleIcon"
+                    ><img src="images/mongodb.svg" class="circleIcon__image"
+                  /></span>
+                </li>
+                <li>
+                  <span class="circleIcon"
+                    ><img src="images/expr.png" class="circleIcon__image"
+                  /></span>
+                </li>
+                <li>
+                  <span class="circleIcon"
+                    ><img src="images/react.svg" class="circleIcon__image"
+                  /></span>
+                </li>
+                <li>
+                  <span class="circleIcon"
+                    ><img src="images/nodejs.png" class="circleIcon__image"
+                  /></span>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </article>
+      </div>
+    </section>
+
+    <!-- the projects section -->
+    <section class="projects" id="projects">
+      <div class="titleSection">
+        <span class="titleSection__title">Projects</span>
+        <h2 class="titleSection__subtitle">
+          Explore My Projects: A Diverse Portfolio of My Work
+        </h2>
+      </div>
+      <div class="projects__cards">
+        <aside class="project__components">
+          <article class="componentProject">
+            <img src="images/movies.png" />
+            <h2>Movies App</h2>
+            <p>This is a movies website .</p>
+            <p><a href="">Code</a> <a href="">View</a></p>
+          </article>
+          <article class="componentProject">
+            <img src="images/blog.png" />
+            <h2>Blog App</h2>
+            <p>This is a Blog web application .</p>
+            <p><a href="">Code</a><a href="">View</a></p>
+          </article>
+          <article class="componentProject">
+            <img src="images/rest.png" />
+            <h2>Restaurant Web App</h2>
+            <p>
+              This is a web application for connecting restaurants and clients .
+            </p>
+            <p><a href="">Code</a><a href="">View</a></p>
+          </article>
+        </aside>
+      </div>
+    </section>
+    <!-- the Contact section -->
+    <section class="contact" id="contact">
+      <div class="contact__container">
+        <div class="contact_form">
+          <div class="titleSection">
+            <span class="titleSection__title">Contact</span>
+            <h2 class="titleSection__subtitle">Contact me now! 👇</h2>
+          </div>
+          <form
+            class="contact__form"
+            onsubmit="sendEmail();  reset(); return false;"
+          >
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              class="contact_inputs"
+              placeholder="Your Email"
+              name="email"
+              required
+            />
+            <label for="content">Message </label>
+            <textarea
+              id="content"
+              class="contact_inputs"
+              name="content"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+        <img src="images/contact1.png" class="contact__image" />
+      </div>
+    </section>
+
+    <!-- the footer -->
+    <footer id="footer">
+      <div class="footer__container">
+        <span class="footer__Name"
+          ><p>
+            Fadwa Benlhaddad <br />
+            Full Stack Web Developer
+          </p>
+        </span>
+        <span class="footer__social">
+          <a href="https://www.linkedin.com/in/fadwa-benlhaddad-83a309242"
+            ><img class="logo" src="images/linkedin.png"
+          /></a>
+          <a href="https://github.com/fadwa3"
+            ><img class="logo" src="images/github.png"
+          /></a>
+          <div class="email">
+            <img class="logo" src="images/email.png" />
+            <p>benlhaddadfadwa3@gmail.com</p>
+          </div>
+        </span>
+        <span class="footer__copyright"
+          >Copyright © 2024. All rights are reserved
+        </span>
+      </div>
+    </footer>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.elasticemail.com",
+          Username: "benlhaddadfadwa3@gmail.com",
+          Password: "4E7E86275CD1A2F6BD88848E700B934AA2F4",
+          To: "benlhaddadfadwa3@gmail.com",
+          From: document.getElementById("email").value,
+          Subject: "New content for query",
+          Body: document.getElementById("content").value,
+        }).then((message) => alert(message));
+      }
+    </script>
+  </body>
+</html>
